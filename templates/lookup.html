@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Lookup
+{% endblock %}
+
+{% block main %}
+
+    <h1>
+        Lookup
+    </h1>
+
+    <form action="/lookup" method="post">
+        <div class="form-group">
+            <input autocomplete="off" class="form-control" name="firstName" placeholder="First Name" type="text">
+            <input autocomplete="off" class="form-control" name="lastName" placeholder="Last Name" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Lookup</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Lookup Results
+{% endblock %}
+
+{% block main %}
+
+    <h1>
+        Lookup Results
+    </h1>
+
+    <table class="table" id="table">
+        <tr>
+            <th>Name</th>
+            <th>Birth Date</th>
+        </tr>
+
+        {% for person in people %}
+            <tr>
+                <td><a href="profile\{{ person.id }}">{{ person.name }}</a></td>
+                <td>{{ person.birthdate }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

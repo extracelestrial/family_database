@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+    <img src="/static/family_reunion.JPG" alt="Family Photo" width="700" class="img_center">
+    <br><br><br>
+    <h2>Family Announcements</h2>
+    <br>
+        <table class="table" id="table" style="width:70%; margin-left:auto; margin-right:auto">
+        {% for announcement in announcements %}
+            <tr>
+                <td>{{ announcement.name }}</a></td>
+                <td>{{ announcement.announcement }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}

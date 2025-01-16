@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile: {{ person.name }}
+{% endblock %}
+
+{% block main %}
+ 
+    <h1>
+        Profile: {{ person.name }}
+    </h1>
+
+    <table class="table" id="table">
+        <tr>
+            <td>Name</td>
+            <td>{{ person.name }}</td>
+        </tr>
+        <tr>
+            <td>Birth Date</td>
+            <td>{{ person.birthdate }}</td>
+        </tr>
+        <tr>
+            <td>Deceased Date</td>
+            <td>{{ person.deceased }}</td>
+        </tr>
+        <tr>
+            <td>Age </td>
+            <td>{{ person.age }}</td>
+        </tr>
+        <tr>
+            <td>Wedding Anniversary</td>
+            <td>{{ person.anniversary }}</td>
+        </tr>
+        <tr>
+            <td>Home Address</td>
+            <td>{{ person.address }}</td>
+        </tr>
+        <tr>
+            <td>Home Phone</td>
+            <td>{{ person.homephone }}</td>
+        </tr>
+        <tr>
+            <td>Cell Phone #</td>
+            <td>{{ person.cellphone }}</td>
+        </tr>
+        <tr>
+            <td>Work Phone #</td>
+            <td>{{ person.workphone }}</td>
+        </tr>
+        <tr>
+            <td>Email Address</td>
+            <td>{{ person.email }}</td>
+        </tr>
+        <tr>
+            <td>Alternate Email Address</td>
+            <td>{{ person.altemail }}</td>
+        </tr>
+        <tr>
+            <td>Website</td>
+            <td>{{ person.website }}</td>
+        </tr>
+        <tr>
+            <td>Announcements</td>
+            <td>{{ person.announcements }}</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+
+{% endblock %}

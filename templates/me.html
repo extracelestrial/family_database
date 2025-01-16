@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Info
+{% endblock %}
+
+{% block main %}
+
+    <h1>
+        My Info
+    </h1>
+
+    <form action="/me" method="post">
+        <div class="form-group" >
+            First Name&emsp;<input class="form-control" name="first" type="text" value="{{ user.first }}"><br><br>
+            Middle Name&emsp;<input class="form-control" name="middle" type="text" value="{{ user.middle }}"><br><br>
+            Maiden Name&emsp;<input class="form-control" name="maiden" type="text" value="{{ user.maiden }}"><br><br>
+            Last Name&emsp;<input class="form-control" name="last" type="text" value="{{ user.last }}"><br><br>
+            Birth Date (YYYY-MM-DD)&emsp;<input class="form-control" name="birthdate" type="text" value="{{ user.birthdate }}"><br><br>
+            Wedding Anniversary (YYYY-MM-DD)&emsp;<input class="form-control" name="anniversary" type="text" value="{{ user.anniversary }}"><br><br>
+            Home Address&emsp;<input class="form-control" name="address" type="text" value="{{ user.address }}" style="width: 50%"><br><br>
+            Home Phone&emsp;<input class="form-control" name="homephone" type="text" value="{{ user.homephone }}"><br><br>
+            Cell Phone&emsp;<input class="form-control" name="cellphone" type="text" value="{{ user.cellphone }}"><br><br>
+            Work Phone&emsp;<input class="form-control" name="workphone" type="text" value="{{ user.workphone }}"><br><br>
+            Email Address&emsp;<input class="form-control" name="email" type="text" value="{{ user.email }}" style="width: 30%"><br><br>
+            Alternate Email Address&emsp;<input class="form-control" name="altemail" type="text" value="{{ user.altemail }}" style="width: 30%"><br><br>
+            Website&emsp;<input class="form-control" name="website" type="text" value="{{ user.website }}" style="width: 50%"><br><br>
+            Announcements&emsp;<input class="form-control" name="announcements" type="text" value="{{ user.announcements }}" style="width: 50%; height: 100px; vertical-align: text-top;"><br><br>
+        </div>
+        <button class="btn btn-primary" type="submit">Update</button>
+    </form>
+
+{% endblock %}
