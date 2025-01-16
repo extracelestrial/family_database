@@ -1,7 +1,6 @@
 # The Family Database
 
-Celeste Dupont
-Rockville, MD
+Video Demo: https://youtu.be/nP-ChT5JyWI?si=ptUID4dMFMjART_r
 
 ## My Project
 ### Background
